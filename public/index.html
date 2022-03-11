@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="../src/index.css" />
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -20,7 +21,164 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body class="body">
+    <header class="header">
+      <a href="" class="header__logo" tabindex="0">
+        <img src="../src/spotify.png" alt="Лого" width="15%" height="15%"/>
+      </a>
+      <button class="page" type="button" tabindex="0" width="20px" height="auto">
+        <img src="../src/left.png" alt="Лого" width="45%" height="auto"/>
+      </button>
+      <button class="page" type="button" tabindex="0" width="20px" height="auto">
+        <img src="../src/right.png" alt="Лого" width="45%" height="auto"/>
+      </button>
+      <button class="premium__buy" type="button" tabindex="0">Сменить тариф</button>
+      <nav class="menu" tabindex="0">
+        <ul>
+          <li class="mainmenu">
+              <p>
+                <img src="../src/user.png" alt="Пользователь" width="15%" height="auto"/>
+                Name_of_User
+              </p>
+            <ul class="submenu">
+              <li>
+                <a href="#">
+                  Аккаунт
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Профиль
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Переход на Premium
+                </a>
+              </li> 
+              <li>
+                <a href="#">
+                  Выйти
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="leftside">
+      <nav class="leftside__navigation">
+        <ul class="firtsli">
+          <li class="navigation_firtsli">
+            <a href="#"> 
+              <img src="../src/home.png" alt="Главная" width="15%" height="auto" />
+              Главная 
+            </a>
+          </li>
+          <li class="navigation_firtsli">
+            <a href="#">
+              <img src="../src/search.png" alt="Поиск" width="15%" height="auto" />
+              Поиск
+            </a>
+          </li>
+          <li class="navigation_firtsli">
+            <a href="#">
+              <img src="../src/mymusic.png" alt="Моя медиатека" width="15%" height="auto" />
+              Моя медиатека
+            </a>
+          </li>
+        </ul>
+        <ul class="secondli">
+          <li class="navigation_secondli">
+            <a href="#">
+              <img src="../src/createplaylist.png" alt="Создать плейлист" width="15%" height="auto" />
+              Создать плейлист
+            </a>
+          </li>
+          <li class="navigation_secondli">
+            <a href="#">
+              <img src="../src/favourite.png" alt="Любимые треки" width="15%" height="auto" />
+              Любимые треки
+            </a>
+          </li>
+        </ul>
+        <div class="download_app">
+          <a href="#">
+            <img src="../src/download-app.png" alt="Скачать приложение" width="15%" height="auto" />
+            Скачать приложение
+          </a>
+        </div>
+      </nav>
+    </aside>
+    <main class="main">
+      <h1>Недавно прослушанные</h1>
+      <section class="lastlisten"> 
+        <div>
+          <a href="#">
+            <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+            Исполнитель - название трека
+          </a>
+        </div>
+        <div>
+          <a href="#">
+          <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+          Исполнитель - название трека
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+            Исполнитель - название трека
+          </a>
+        </div>
+      </section>
+      <h1>Для Вас</h1>
+      <section class="foruser">
+        <div>
+          <a href="#">
+            <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+            Исполнитель - название трека
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+            Исполнитель - название трека
+          </a>
+        </div>
+        <div>
+          <a href="#">
+          <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+          Исполнитель - название трека
+          </a>
+        </div>
+      </section>
+      <h1>По настроению</h1>
+      <section class="mood">
+        <div>
+          <a href="#">
+          <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+          Исполнитель - название трека
+          </a>
+        </div>
+        <div>
+          <a href="#">
+          <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+          Исполнитель - название трека
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+            Исполнитель - название трека
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
