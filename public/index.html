@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/index.css" />
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -23,41 +23,41 @@
   </head>
   <body class="body">
     <header class="header">
-      <a href="" class="header__logo" tabindex="0">
-        <img src="../src/spotify.png" alt="Лого" width="15%" height="15%"/>
+      <a href="#" class="header__logo">
+        <img src="%PUBLIC_URL%/spotify.png" alt="Лого" width="145px" height="125px"/>
       </a>
-      <button class="page" type="button" tabindex="0" width="20px" height="auto">
-        <img src="../src/left.png" alt="Лого" width="45%" height="auto"/>
+      <button class="page" type="button" width="20px" height="auto">
+        <img src="%PUBLIC_URL%/left.png" alt="Назад" width="55px" height="auto"/>
       </button>
-      <button class="page" type="button" tabindex="0" width="20px" height="auto">
-        <img src="../src/right.png" alt="Лого" width="45%" height="auto"/>
+      <button class="page" type="button" width="20px" height="auto">
+        <img src="%PUBLIC_URL%/right.png" alt="Вперед" width="55px" height="auto"/>
       </button>
-      <button class="premium__buy" type="button" tabindex="0">Сменить тариф</button>
-      <nav class="menu" tabindex="0">
-        <ul>
-          <li class="mainmenu">
-              <p>
-                <img src="../src/user.png" alt="Пользователь" width="15%" height="auto"/>
+      <button class="premium__buy" type="button">Сменить тариф</button>
+      <nav class="nav_menu">
+        <ul class="ulmenu">
+          <li class="limenu">
+              <p class="name_of_user">
+                <img class="img_of_user" src="%PUBLIC_URL%/user.png" alt="Пользователь" width="30px" height="auto"/>
                 Name_of_User
               </p>
-            <ul class="submenu">
-              <li>
-                <a href="#">
+            <ul class="ulsubmenu">
+              <li class="lisubmenu">
+                <a class="asubmenu" href="#">
                   Аккаунт
                 </a>
               </li>
-              <li>
-                <a href="#">
+              <li class="lisubmenu">
+                <a class="asubmenu" href="#">
                   Профиль
                 </a>
               </li>
-              <li>
-                <a href="#">
+              <li class="lisubmenu">
+                <a class="asubmenu" href="#">
                   Переход на Premium
                 </a>
               </li> 
-              <li>
-                <a href="#">
+              <li class="lisubmenu">
+                <a class="asubmenu" href="#">
                   Выйти
                 </a>
               </li>
@@ -70,114 +70,114 @@
       <nav class="leftside__navigation">
         <ul class="firtsli">
           <li class="navigation_firtsli">
-            <a href="#"> 
-              <img src="../src/home.png" alt="Главная" width="15%" height="auto" />
+            <a class="leftside_a" href="#"> 
+              <img class ="leftside_img" src="%PUBLIC_URL%/home.png" alt="Главная" width="25px" height="auto" />
               Главная 
             </a>
           </li>
           <li class="navigation_firtsli">
-            <a href="#">
-              <img src="../src/search.png" alt="Поиск" width="15%" height="auto" />
+            <a class="leftside_a" href="#">
+              <img class ="leftside_img" src="%PUBLIC_URL%/search.png" alt="Поиск" width="25px" height="auto" />
               Поиск
             </a>
           </li>
           <li class="navigation_firtsli">
-            <a href="#">
-              <img src="../src/mymusic.png" alt="Моя медиатека" width="15%" height="auto" />
+            <a class="leftside_a" href="#">
+              <img class ="leftside_img" src="%PUBLIC_URL%/mymusic.png" alt="Моя медиатека" width="25px" height="auto" />
               Моя медиатека
             </a>
           </li>
         </ul>
         <ul class="secondli">
           <li class="navigation_secondli">
-            <a href="#">
-              <img src="../src/createplaylist.png" alt="Создать плейлист" width="15%" height="auto" />
+            <a class="leftside_a" href="#">
+              <img class ="leftside_img" src="%PUBLIC_URL%/createplaylist.png" alt="Создать плейлист" width="25px" height="auto" />
               Создать плейлист
             </a>
           </li>
           <li class="navigation_secondli">
-            <a href="#">
-              <img src="../src/favourite.png" alt="Любимые треки" width="15%" height="auto" />
+            <a class="leftside_a" href="#">
+              <img class ="leftside_img" src="%PUBLIC_URL%/favourite.png" alt="Любимые треки" width="25px" height="auto" />
               Любимые треки
             </a>
           </li>
         </ul>
         <div class="download_app">
-          <a href="#">
-            <img src="../src/download-app.png" alt="Скачать приложение" width="15%" height="auto" />
+          <a class="leftside_a" href="#">
+            <img class ="leftside_img" src="%PUBLIC_URL%/download-app.png" alt="Скачать приложение" width="25px" height="auto" />
             Скачать приложение
           </a>
         </div>
       </nav>
     </aside>
     <main class="main">
-      <h1>Недавно прослушанные</h1>
+      <h1 class="musich1">Недавно прослушанные</h1>
       <section class="lastlisten"> 
-        <div>
-          <a href="#">
-            <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
-            Исполнитель - название трека
+        <div class="lastlistendiv">
+          <a class ="main_a" href="#">
+            <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
+            <span class="inf_of_song">Исполнитель - название трека</span>
           </a>
         </div>
-        <div>
-          <a href="#">
-          <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+        <div class="lastlistendiv">
+          <a class ="main_a" href="#">
+          <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
           Исполнитель - название трека
           </a>
         </div>
-        <div>
-          <a href="#">
-            <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+        <div class="lastlistendiv">
+          <a class ="main_a" href="#">
+            <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
             Исполнитель - название трека
           </a>
         </div>
       </section>
-      <h1>Для Вас</h1>
+      <h1 class="musich1">Для Вас</h1>
       <section class="foruser">
-        <div>
-          <a href="#">
-            <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+        <div class="foruserdiv">
+          <a class ="main_a" href="#">
+            <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
             Исполнитель - название трека
           </a>
         </div>
-        <div>
-          <a href="#">
-            <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+        <div class="foruserdiv"> 
+          <a class ="main_a" href="#">
+            <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
             Исполнитель - название трека
           </a>
         </div>
-        <div>
-          <a href="#">
-          <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+        <div class="foruserdiv">
+          <a class ="main_a" href="#">
+          <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
           Исполнитель - название трека
           </a>
         </div>
       </section>
-      <h1>По настроению</h1>
+      <h1 class="musich1">По настроению</h1>
       <section class="mood">
-        <div>
-          <a href="#">
-          <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+        <div class="mooddiv">
+          <a class ="main_a" href="#">
+          <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
           Исполнитель - название трека
           </a>
         </div>
-        <div>
-          <a href="#">
-          <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+        <div class="mooddiv">
+          <a class ="main_a" href="#">
+          <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
           Исполнитель - название трека
           </a>
         </div>
-        <div>
-          <a href="#">
-            <img src="../src/album.png" alt="Альбом" width="75%" height="auto"/>
+        <div class="mooddiv">
+          <a class ="main_a" href="#">
+            <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
             Исполнитель - название трека
           </a>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <div class="footer">
 
-    </footer>
+    </div>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
