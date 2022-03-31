@@ -1,192 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/index.css" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/reset.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/main.css">
+    <meta name="description" content="Web site created using create-react-app">
+    <title>SpotifyClone</title>
   </head>
-  <body class="body">
-    <header class="header">
-      <a href="#" class="header__logo">
-        <img src="%PUBLIC_URL%/spotify.png" alt="Лого" width="145" height="auto"/>
-      </a>
-      <button class="page" type="button">
-        <img src="%PUBLIC_URL%/left.png" alt="Назад" width="55px" height="auto"/>
-      </button>
-      <button class="page" type="button">
-        <img src="%PUBLIC_URL%/right.png" alt="Вперед" width="55px" height="auto"/>
-      </button>
-      <button class="premium__buy" type="button">Сменить тариф</button>
-      <nav class="nav_menu">
-        <ul class="ulmenu">
-          <li class="limenu">
-              <p class="name_of_user">
-                <img class="img_of_user" src="%PUBLIC_URL%/user.png" alt="Пользователь" width="30px" height="auto"/>
-                Name_of_User
-              </p>
-            <ul class="ulsubmenu">
-              <li class="lisubmenu">
-                <a class="asubmenu" href="#">
-                  Аккаунт
-                </a>
-              </li>
-              <li class="lisubmenu">
-                <a class="asubmenu" href="#">
-                  Профиль
-                </a>
-              </li>
-              <li class="lisubmenu">
-                <a class="asubmenu" href="#">
-                  Переход на Premium
-                </a>
-              </li> 
-              <li class="lisubmenu">
-                <a class="asubmenu" href="#">
-                  Выйти
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <aside class="leftside">
-      <nav class="leftside__navigation">
-        <ul class="firtsul">
-          <li class="navigation_firtsul">
-            <a class="leftside_a" href="#"> 
-              <img class ="leftside_img" src="%PUBLIC_URL%/home.png" alt="Главная" width="25px" height="auto" />
-              Главная 
-            </a>
-          </li>
-          <li class="navigation_firtsul">
-            <a class="leftside_a" href="#">
-              <img class ="leftside_img" src="%PUBLIC_URL%/search.png" alt="Поиск" width="25px" height="auto" />
-              Поиск
-            </a>
-          </li>
-          <li class="navigation_firtsul">
-            <a class="leftside_a" href="#">
-              <img class ="leftside_img" src="%PUBLIC_URL%/mymusic.png" alt="Моя медиатека" width="25px" height="auto" />
-              Моя медиатека
-            </a>
-          </li>
-        </ul>
-        <ul class="secondul">
-          <li class="navigation_secondul">
-            <a class="leftside_a" href="#">
-              <img class ="leftside_img" src="%PUBLIC_URL%/createplaylist.png" alt="Создать плейлист" width="25px" height="auto" />
-              Создать плейлист
-            </a>
-          </li>
-          <li class="navigation_secondul">
-            <a class="leftside_a" href="#">
-              <img class ="leftside_img" src="%PUBLIC_URL%/favourite.png" alt="Любимые треки" width="25px" height="auto" />
-              Любимые треки
-            </a>
-          </li>
-        </ul>
-        <div class="download_app">
-          <a class="leftside_a" href="#">
-            <img class ="leftside_img" src="%PUBLIC_URL%/download-app.png" alt="Скачать приложение" width="25px" height="auto" />
-            Скачать приложение
-          </a>
-        </div>
-      </nav>
-    </aside>
-    <main class="main">
-      <h1 class="musich1">Недавно прослушанные</h1>
-      <section class="lastlisten"> 
-        <div class="lastlistendiv">
-          <a class ="main_a" href="#">
-            <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
-            <span class="inf_of_song">Исполнитель - название трека</span>
-          </a>
-        </div>
-        <div class="lastlistendiv">
-          <a class ="main_a" href="#">
-          <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
-          Исполнитель - название трека
-          </a>
-        </div>
-        <div class="lastlistendiv">
-          <a class ="main_a" href="#">
-            <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
-            Исполнитель - название трека
-          </a>
-        </div>
-      </section>
-      <h1 class="musich1">Для Вас</h1>
-      <section class="foruser">
-        <div class="foruserdiv">
-          <a class ="main_a" href="#">
-            <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
-            Исполнитель - название трека
-          </a>
-        </div>
-        <div class="foruserdiv"> 
-          <a class ="main_a" href="#">
-            <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
-            Исполнитель - название трека
-          </a>
-        </div>
-        <div class="foruserdiv">
-          <a class ="main_a" href="#">
-          <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
-          Исполнитель - название трека
-          </a>
-        </div>
-      </section>
-      <h1 class="musich1">По настроению</h1>
-      <section class="mood">
-        <div class="mooddiv">
-          <a class ="main_a" href="#">
-          <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
-          Исполнитель - название трека
-          </a>
-        </div>
-        <div class="mooddiv">
-          <a class ="main_a" href="#">
-          <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
-          Исполнитель - название трека
-          </a>
-        </div>
-        <div class="mooddiv">
-          <a class ="main_a" href="#">
-            <img src="%PUBLIC_URL%/album.png" alt="Альбом" width="105px" height="auto"/>
-            Исполнитель - название трека
-          </a>
-        </div>
-      </section>
-    </main>
-
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root">
+      <main class="main">
+        <header class="up_of_main">
+          <div class="nav_of_pages">
+            <a href="#" class="back_page">
+              <img src="%PUBLIC_URL%/assets/img/left.png" alt="предыдущая страница" width="45" height="auto" />
+            </a>
+            <a href="#" class="next_page">
+              <img src="%PUBLIC_URL%/assets/img/right.png" alt="следующая страница" width="45" height="auto" />
+            </a>
+          </div>
+          <div class="premium_and_user">
+            <button class="premium_buy">
+              Сменить тариф
+            </button>
+            <div class="user">
+              <img src="%PUBLIC_URL%/assets/img/user.png" alt="пользователь" width="28" height="auto"/>
+              Пользователь
+            </div>
+          </div>
+        </header>
+        <div class="content">
+          <h1 class="name_of_categories">Недавно прослушано</h1>
+          <div class="last_listen">
+            <div class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </div>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+          </div>
+          <h1 class="name_of_categories">Для Вас</h1>
+          <div class="for_user">
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+          </div>
+          <h1 class="name_of_categories">Новинки</h1>
+          <div class="news">
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  style="border-radius: 5px;" media="only screen and (min-width: 1024px)">
+                  <img src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка" style="border-radius: 5px;">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+          </div>
+        </div>
+      </main>
+      <aside class="navbar">
+        <nav class="navigation_of_aside">
+          <a href="#" class="logo">
+            <img  src="%PUBLIC_URL%/assets/img/spotify.png" alt="Лого" width="150" height="auto" />
+          </a>
+          <ul class="first_half_of_navigation">
+            <li class="home">
+              <a href="#">
+              <img src="%PUBLIC_URL%/assets/img/home.png" alt="Главная" width="25" height="auto" style = "padding-right:15px" />
+              </a>
+              Главная
+            </li>
+            <li class="search">
+              <a href="#">
+              <img src="%PUBLIC_URL%/assets/img/search.png" alt="Поиск" width="25" height="auto" style = "padding-right:15px" />
+              </a>
+              Поиск
+            </li>
+            <li class="gallery">
+              <a href="#">
+              <img src="%PUBLIC_URL%/assets/img/mymusic.png" alt="Моя медиатека" width="25" height="auto" style = "padding-right:15px" />
+              </a>
+              Моя медиатека
+            </li>
+          </ul>
+          <ul class="second_half_of_navigation">
+            <li class="create_playlist">
+              <a href="#">
+              <img src="%PUBLIC_URL%/assets/img/createplaylist.png" alt="Создать плейлист" width="25" height="auto" style = "padding-right:15px" />
+              </a>
+              Создать плейлист
+            </li>
+            <li class="favourite">
+              <a href="#">
+              <img src="%PUBLIC_URL%/assets/img/favourite.png" alt="Избранное" width="25" height="auto" style = "padding-right:15px" />
+              </a>
+              Избранное
+            </li>
+          </ul>
+        </nav>
+        <div class="downloadd_app">
+          <a href="#">
+            <picture>
+              <source srcset="%PUBLIC_URL%/assets/img/download_app_for_pc.png" alt="Установить приложение" style = "padding-right:15px" media="only screen and (min-width: 1024px)">
+              <img src="%PUBLIC_URL%/assets/img/download_app_for_mobile.png" alt="Установить приложение" style="padding-right:5px">
+            </picture>
+          </a>
+          Установить приложение
+        </div>
+      </aside>
+    </div>
   </body>
 </html>
