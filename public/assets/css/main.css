@@ -1,5 +1,4 @@
 :root {
-    /* variables */
     --dark-color: #000000;
     --background-noise: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1IiBkPSJNMCAwaDMwMHYzMDBIMHoiLz48L3N2Zz4=");
 }
@@ -19,9 +18,21 @@
     background-color: gray;
 }
 
-a {
+.next_page, .back_page, .go_to_song, .logo, .go_home, .go_search, .go_gallery, .go_create_playlist, .go_favourite, .go_downloadd_app{
     text-decoration: none;
     color: aliceblue;
+}
+
+.logo{
+    padding: 0 16px;
+}
+
+.logo_of_song {
+    border-radius: 5px;
+}
+
+.logo_home, .logo_seacrh, .logo_gallery, .logo_create_playlist, .logo_favourite {
+    padding-right:15px;
 }
 
 #root {
@@ -30,7 +41,7 @@ a {
     grid-template-rows: 1fr auto;
     min-height: 100vh;
     color: aliceblue;
-    font-family: var(--font-family,spotify-circular),Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -71,20 +82,6 @@ a {
     }
 }
 
-@media only screen and (min-width: 1024px) {
-    .navigation_of_aside {
-        font-family: var(--font-family,spotify-circular),Helvetica,Arial,sans-serif;
-        font-size: 14px;
-        display: flex;
-        row-gap: 20px;
-        flex-direction: column;
-        letter-spacing: normal;
-        font-weight: 700;
-        color: #b3b3b3;
-        cursor: pointer;  
-    }
-}
-
 .first_half_of_navigation , .second_half_of_navigation{
     display: none;
 }
@@ -93,40 +90,7 @@ a {
     .first_half_of_navigation , .second_half_of_navigation{
         display: flex;
         flex-direction: column;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .first_half_of_navigation, .second_half_of_navigation{
         padding: 0 16px;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .home, .search, .gallery, .create_playlist, .favourite,  .downloadd_app {
-        padding: 0 8px;
-    }
-}
-
-.logo{
-    padding: 0 16px;
-}
-
-@media only screen and (min-width: 1024px) {
-    .search, .gallery, .create_playlist, .favourite {
-        margin-top: 15px;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-     .search:hover, .gallery:hover, .create_playlist:hover, .favourite:hover, .downloadd_app:hover{
-        color: #fff;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .home{
-        color: #fff;
     }
 }
 
@@ -136,12 +100,6 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-top: 25px;
-}
-
-@media only screen and (min-width: 1024px) {
-    .up_of_main {
-        padding-top: 25px;
-    }
 }
 
 .downloadd_app{
@@ -158,8 +116,7 @@ a {
         flex-direction: row;
         cursor: pointer;
         color: #b3b3b3;
-        padding: 0 20px 15px 12px;
-        padding-left: 25px;
+        padding: 0 8px 10px 8px;
     }
 }
 
@@ -198,7 +155,6 @@ a {
     line-height: 18px;
     padding: 4px;
     text-transform: uppercase;
-    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
     background-color: rgba(0,0,0,.7);
     border: 1px solid rgba(255,255,255,.7);
     color: #fff;
@@ -243,7 +199,6 @@ a {
         padding-bottom: 24px;
     }
 }
-
 
 .song {
     display: flex;
@@ -295,6 +250,7 @@ a {
     padding: 20px 0 10px 15px;
     letter-spacing: -0.04em;
     font-weight: 700;
+    color: #ffffff;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -313,4 +269,44 @@ a {
     .content {
         padding: 24px 32px 0;
     }
+}
+
+.logo_downloadd_app{
+    padding-right:5px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .logo_downloadd_app {
+        padding-right: 15px
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .search:hover, .gallery:hover, .create_playlist:hover, .favourite:hover, .downloadd_app:hover{
+       color: #fff;
+   }
+
+   .home{
+       color: #fff;
+   }
+
+   .search, .gallery, .create_playlist, .favourite {
+       margin-top: 15px;
+   }
+
+   .home, .search, .gallery, .create_playlist, .favourite{
+       padding: 0 8px;
+   }
+
+   .navigation_of_aside {
+       font-size: 14px;
+       display: flex;
+       row-gap: 20px;
+       flex-direction: column;
+       letter-spacing: normal;
+       font-weight: 700;
+       color: #b3b3b3;
+       cursor: pointer;  
+   }
+
 }
