@@ -1,37 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/reset.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/main.css">
+    <meta name="description" content="Web site created using create-react-app">
+    <title>SpotifyClone</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root">
+      <main class="main">
+        <header class="up_of_main">
+          <div class="nav_of_pages">
+            <a href="#" class="back_page">
+              <img src="%PUBLIC_URL%/assets/img/left.png" alt="предыдущая страница" width="45"/>
+            </a>
+            <a href="#" class="next_page">
+              <img src="%PUBLIC_URL%/assets/img/right.png" alt="следующая страница" width="45"/>
+            </a>
+          </div>
+          <div class="premium_and_user">
+            <button class="premium_buy">
+              Сменить тариф
+            </button>
+            <div class="user">
+              <img src="%PUBLIC_URL%/assets/img/user.png" alt="пользователь" width="28"/>
+              Пользователь
+            </div>
+          </div>
+        </header>
+        <div class="content">
+          <h1 class="name_of_categories">Недавно прослушано</h1>
+          <div class="last_listen">
+            <div class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </div>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture> 
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+          </div>
+          <h1 class="name_of_categories">Для Вас</h1>
+          <div class="for_user">
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture> 
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+          </div>
+          <h1 class="name_of_categories">Новинки</h1>
+          <div class="news">
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка" media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+            <section class="song">
+              <a href="#" class="go_to_song">
+                <picture>
+                  <source srcset="%PUBLIC_URL%/assets/img/album_for_pc.jpg" alt="Обложка"  media="only screen and (min-width: 1024px)">
+                  <img class="logo_of_song" src="%PUBLIC_URL%/assets/img/album_for_mobile.jpg" alt="Обложка">
+                </picture>
+              </a>
+              <p class="songer">
+                Исполнитель
+              </p>
+              <p class="name_of_song">
+                название
+              </p>
+            </section>
+          </div>
+        </div>
+      </main>
+      <aside class="navbar">
+        <nav class="navigation_of_aside">
+          <a href="#" class="logo">
+            <img src="%PUBLIC_URL%/assets/img/spotify.png" alt="Лого" width="150" />
+          </a>
+          <ul class="first_half_of_navigation">
+            <li class="home">
+              <a href="#" class="go_home">
+              <img class="logo_home" src="%PUBLIC_URL%/assets/img/home.png" alt="Главная" width="25"/>
+              </a>
+              Главная
+            </li>
+            <li class="search">
+              <a href="#" class="go_search">
+              <img class="logo_seacrh" src="%PUBLIC_URL%/assets/img/search.png" alt="Поиск" width="25"/>
+              </a>
+              Поиск
+            </li>
+            <li class="gallery">
+              <a href="#" class="go_gallery">
+              <img class="logo_gallery" src="%PUBLIC_URL%/assets/img/mymusic.png" alt="Моя медиатека" width="25"/>
+              </a>
+              Моя медиатека
+            </li>
+          </ul>
+          <ul class="second_half_of_navigation">
+            <li class="create_playlist">
+              <a href="#" class="go_create_playlist">
+              <img class="logo_create_playlist" src="%PUBLIC_URL%/assets/img/createplaylist.png" alt="Создать плейлист" width="25"/>
+              </a>
+              Создать плейлист
+            </li>
+            <li class="favourite">
+              <a href="#" class="go_favourite">
+              <img class="logo_favourite" src="%PUBLIC_URL%/assets/img/favourite.png" alt="Избранное" width="25"/>
+              </a>
+              Избранное
+            </li>
+          </ul>
+        </nav>
+        <div class="downloadd_app">
+          <a href="#" class="go_downloadd_app">
+            <picture>
+              <source srcset="%PUBLIC_URL%/assets/img/download_app_for_pc.png" alt="Установить приложение" media="only screen and (min-width: 1024px)">
+              <img class="logo_downloadd_app" src="%PUBLIC_URL%/assets/img/download_app_for_mobile.png" alt="Установить приложение">
+            </picture>
+          </a>
+          Установить приложение
+        </div>
+      </aside>
+    </div>
   </body>
 </html>
